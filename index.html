@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="个人主页：项目、作品与联系方式。">
+  <meta name="color-scheme" content="light dark">
+  <title>你的名字 | 个人主页</title>
+  <style>
+    :root { --bg:#fff; --text:#1a1a1a; --subtext:#666; --link:#0066cc; --line:#e8e8e8; }
+    @media (prefers-color-scheme:dark) {
+      :root { --bg:#121212; --text:#e0e0e0; --subtext:#aaa; --link:#66b2ff; --line:#303030; }
+    }
+    * { box-sizing:border-box; }
+    body { max-width:690px; margin:80px auto; padding:0 20px; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; line-height:1.7; color:var(--text); background:var(--bg); overflow-wrap:anywhere; }
+    h1 { font-size:1.8rem; line-height:1.3; margin:0 0 .5rem; }
+    .bio { color:var(--subtext); margin:0 0 2.5rem; }
+    h2 { font-size:1rem; margin:2rem 0 .75rem; }
+    ul { list-style:none; padding:0; margin:0; }
+    li { margin-bottom:.75rem; }
+    a { color:var(--link); text-decoration:none; text-underline-offset:4px; }
+    a:hover { text-decoration:underline; }
+    a:focus-visible { outline:2px solid var(--link); outline-offset:4px; border-radius:2px; }
+    .description, footer { color:var(--subtext); }
+    footer { border-top:1px solid var(--line); margin-top:3rem; padding-top:1rem; font-size:.8rem; }
+    @media(max-width:480px) { body { margin:48px auto; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <!-- 将姓名与简介替换为你的信息，并同步修改上方 title 与 description。 -->
+      <h1>你的名字</h1>
+      <p class="bio">一句简明扼要的自我介绍或职业定位</p>
+    </header>
+    <section aria-labelledby="projects">
+      <h2 id="projects">项目 / 作品</h2>
+      <!-- 有真实项目地址后，将项目名称改成带链接的 a 元素。 -->
+      <ul>
+        <li>项目名称 A <span class="description">— 简短的项目描述或应用场景</span></li>
+        <li>项目名称 B <span class="description">— 核心功能与亮点说明</span></li>
+      </ul>
+    </section>
+    <section aria-labelledby="contact">
+      <h2 id="contact">社交 / 联络</h2>
+      <!-- 发布前替换下面的示例账号和邮箱。 -->
+      <ul>
+        <li>GitHub: <a href="https://github.com/1365929084-tech" target="_blank" rel="noopener noreferrer">@1365929084-tech</a></li>
+        <li>Email: <a href="mailto:Rpeixuan2000@gmail.com">Rpeixuan2000@gmail.com</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>保持简单，持续创造。</footer>
+</body>
+</html>
+
